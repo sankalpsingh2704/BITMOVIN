@@ -1,0 +1,179 @@
+.wrapper_one
+{
+	width: 525px;
+	height: 236px;
+	background: #0934DA;
+}
+.wrapper_two{
+	width:523px;
+	height: 235px;
+	background: #166AEE;
+	border-right: 1px solid #00138C;
+	border-bottom: 1px solid #00138C;
+}
+.wrapper_three{
+	width:521px;
+	height: 234px;
+	background: #0855DD;
+	border-right: 1px solid #001EA0;
+	border-bottom: 1px solid #001EA0;
+}
+.wrapper_two,.wrapper_three,.main_container
+{
+	margin-left: 1px;
+}
+.main_container{
+	width: 519px;
+	height: 233px;
+	background: #ECE9D8;
+	border-right: 1px solid #003EDC;
+	border-bottom: 1px solid #003EDC;
+} 
+
+.bar{ 
+	height: 28px;
+	width: 523px;
+	color: white;
+	text-shadow: 1px 1px #000000;
+	font-family: Open Sans,arial;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top: 1px solid #0058EB;
+	border-left: 1px solid #0058EB;
+	border-right: 1px solid #0058EB;
+	background: linear-gradient(to bottom,#3F97FF 1px,#2B90FF 2px,#0372FF 3px,#0365F1 4px,#005CE9 5px,#005CEA 6px,#0054E3 7px,#0054E3 8px,#0054E3 9px,#0055E5 10px,#0055E5 11px,#0055E5 12px,#0055E5 13px,#0055EA 14px,#0055EA 15px,#0058EE 16px,#0057EE,#005BF2 17px,#005AF5 19px,#0164F9 20px,#026AFE 22px,#026AFE 23px,#036EFF 24px,#0065FD 25px,#0060FC 26px,#004DE3 27px,#0143CF 28px);
+}
+.bar,.main_container{
+	font-family: Arial;
+}
+.bar > h3{
+	top: 8px;
+    display: table-cell;
+    vertical-align: middle;
+    left: 6px;
+}
+
+.help_close{
+	float: right;
+	bottom: 12px;
+	right: 3px;
+}
+.radio_group{	
+	width: 110px;
+	height: 112px;
+}
+.object_type{
+	width: 301px;	
+	height: 123px;
+	margin-top: 7px;
+	margin-bottom: 4px;
+}
+.display_chkbox{	
+    top: 3px;
+}
+.help_close div,.display_one,.object_type,.radio_group,.fieldset_result div{
+	float: left;
+	
+}
+.help_close div,.display_one,.object_type,.radio_group,.fieldset_result div ,.btn , .legend
+{
+	font-size: 11px;
+}
+.radio_group{
+	padding-top: 10px;
+	top: 14px;
+}
+.radio_top{
+	margin-top: 6px;
+}
+.display_one{
+	width: 108px;
+	height: 113px;
+	left: 3px;
+}
+.scroll_bar{
+    bottom: 107px;
+    left: 284px;
+}
+.display_icon{
+	margin-top: 27px;
+	margin-left: 8px;
+}
+.select_box{
+	width: 303px;
+	height: 108px;
+	border-color: #7F9DB9;
+}
+.select_box ,.fieldset_result .image_container{
+	margin-top: 4px;
+}
+.fieldset_result  div, .select_box
+{
+	overflow: hidden;
+}
+.select_box ,.bar,.main_container {
+	font-size: 11px;
+}
+.create_radio{
+	top: 2px;
+}
+.fieldset_result{
+	height: 78px;
+	color: #0046D5;
+	border: 0.5px solid #D0D0BF;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	width: 387px;
+}
+
+.fieldset_result p{
+	color: black;
+	width: 280px;
+	margin-left: 17px;
+}
+.help_close,.fieldset_result p,.fieldset_result div:last-child,.help_close,.fieldset_result,.create_radio,.scroll_bar,.display_one,.display_chkbox,.bar > h3,.radio_group,.rectangle,.helparea{
+	position: relative;
+}
+.fieldset_result .image_container{
+	margin-top: 5px;
+	margin-left: 5px;
+}
+.fieldset_result div:last-child
+{
+	margin-top: 0;
+	bottom: 6px;
+}
+.display_one
+{
+	bottom: 5px;
+}
+.btn{
+	width: 89px;
+	background: linear-gradient(to top,  #E2DFD6 0%, #FFFFFF 100%);
+	border: 1px solid #003C74;
+	outline: none;
+	height: 21px;
+	margin-left: 9px;
+}
+.btn:focus
+{
+	-webkit-box-shadow: inset 0 -1px 1px 0.5px #6982EE, inset 1px 1px 0 1px #CEE7FF, inset 1px 1px 0 1px #BCD4F6;
+	-moz-box-shadow: inset 0 -1px 1px 0.5px #6982EE, inset 1px 1px 0 1px #CEE7FF, inset 1px 1px 0 1px #BCD4F6;
+	box-shadow: inset 0 -1px 1px 0.5px #6982EE, inset 1px 1px 0 1px #CEE7FF, inset 1px 1px 0 1px #BCD4F6;
+}
+.btn ,.rectangle,.helparea{
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.cancel{
+	margin-top: 9px;
+}
+.checkbox_custom  + .checkbox_custom_label:before, .radio_custom + .radio_custom_label:before {
+	content:'';
+	background:-webkit-linear-gradient(left top,#E5E5E2, #fff);
+	background:-moz-linear-gradient(bottom right,#E5E5E2, #fff);
+	background:linear-gradient(to bottom right,#E5E5E2, #fff);
+	border:1px solid #1C5180;
+	display:inline-block

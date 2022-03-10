@@ -1,0 +1,17 @@
+.input-group
+{
+	margin-left: 40px;
+	margin-right: 40px;
+}
+.input-group-btn:last-child>.btn{
+	width: 100px;
+}
+.video-section
+{
+	margin-top: 20px;
+	margin-left: 10px;
+}
+.select-box
+{
+	margin-top: 20px;
+}

@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Assignment 1</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="repair.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div id="myarea" class="area">
+				<canvas class="draw" width="640" height="480" id="outerspace">
+				</canvas>
+				<button type="button" id="rainbow_btn" name="rainbow_btn" class="animated_btn" onclick="rain();">Animated Rainbow</button>
+			</div>
+			<div class="change_controls">
+				<div class="circle">
+					<button class="circle_btn" id="circle_btn" name="circle_btn" type="button" onclick="cir();">Circle</button>
+				</div>
+				<div class="rectangle">
+					<button class="rectangle_btn" id="rectangle_btn" name="rectangle_btn" type="button" onclick="rect();">Rectangle</button>
+				</div>
+				<div class="square">
+					<button class="square_btn" id="square_btn" name="history_btn" type="button" onclick="squ();">Square</button>
+				</div>
+				<div class="history">
+					<button class="history_btn" id="history_btn" name="history_btn" type="button" onclick="myhistory();">History</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

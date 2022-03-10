@@ -1,0 +1,184 @@
+<html>
+   <head>
+      <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+      <!--<script type = "text/javascript" src = "index.js"></script> -->
+	  <script>
+		var config = {
+			apiKey: "AIzaSyAqMT7ZA-r7H4oimk-JAFMsT3FfJ9YerLY",
+    		authDomain: "bazar-db.firebaseapp.com",
+    		databaseURL: "https://bazar-db.firebaseio.com",
+    		storageBucket: "bazar-db.appspot.com",
+    		messagingSenderId: "54230960520"
+			};
+			var defaultApp = firebase.initializeApp(config);
+			var storage = firebase.storage();
+			
+			var pathReference = storage.ref('mybucket');
+			function download(){
+			pathReference.child("22=9=pp=16.jpg").getDownloadURL().then(function(url) {
+				var img = document.getElementById("myimg");
+				img.src = url;
+				});
+			}
+			var openFile = function(event) {
+				var input = event.target;
+				console.log(input.files[0].name);
+			
+			imgref = pathReference.child(input.files[0].name);
+			imgref.put(input.files[0]).then(function(snapshot) {
+				var img = document.getElementById("myimg");
+				console.log('Uploaded a blob or file!');
+				img.src = snapshot.downloadURL;
+			});
+			}
+			//with Email
+			function emailAuth(){
+			var email = document.getElementById('email').value;
+			var password = document.getElementById('password').value;
+			console.log(email);
+			console.log(password);
+				firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+				console.log(error.code);
+				console.log(error.message);
+				});
+			}
+			function emailSignin(){
+				var email = document.getElementById('email').value;
+				var password = document.getElementById('password').value;
+				console.log(email);
+				console.log(password);
+				firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+				console.log(error.code);
+				console.log(error.message);
+				});
+			}
+			//Google
+			var provider = new firebase.auth.GoogleAuthProvider();
+
+			function googleSignin() {
+			var provider = new firebase.auth.GoogleAuthProvider();
+			firebase.auth().signInWithPopup(provider).then(function(result) {
+				var token = result.credential.accessToken;
+				var user = result.user;
+				var img = document.getElementById("myimg");
+				img.src = user.photoURL;
+				console.log(token)
+				console.log(user)
+			}).catch(function(error) {
+			var errorCode = error.code;
+			var errorMessage = error.message;
+		
+			console.log(error.code)
+			console.log(error.message)
+		});
+		}
+		
+		
+
+	function googleSignout() {
+		firebase.auth().signOut().then(function() {
+			console.log('Signout Succesfull')
+		}, function(error) {
+			console.log('Signout Failed')  
+		});
+		}
+		
+		//facebook
+		window.fbAsyncInit = function() {
+		FB.init({
+         appId      : '1753378004974559',
+         xfbml      : true,
+         version    : 'v2.8'
+      });
+   };
+
+   (function(d, s, id){
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+   
+   
+   
+
+	function facebookSignin() {
+	var provider = new firebase.auth.FacebookAuthProvider();
+	firebase.auth().signInWithPopup(provider).then(function(result) {
+      var token = result.credential.accessToken;
+      var user = result.user;
+      console.log(token)
+      console.log(user)
+   }).catch(function(error) {
+      console.log(error.code);
+      console.log(error.message);
+   });
+}
+function facebookSignout() {
+   firebase.auth().signOut()
+   
+   .then(function() {
+      console.log('Signout successful!')
+   }, function(error) {
+      console.log('Signout failed')
+   });
+}
+			/*var input = event.target;			
+			var reader = new FileReader();
+			reader.onload = function(){
+				var dataURL = reader.result;
+				var output = document.getElementById('myimg');
+				console.log(dataURL.byteLength);
+				imgref = pathReference.child('mountain.jpg');
+				imgref.put(input.files[0]).then(function(snapshot) {
+					console.log('Uploaded a blob or file!');
+				});
+				//output.src = dataURL;
+			};
+			reader.readAsDataURL(input.files[0]);*/
+			//reader.readAsArrayBuffer(input.files[0]);
+			function upload(){
+				
+			};
+			
+				
+			
+			/*
+			var ref = firebase.database().ref('users');
+			
+			firebase.database().ref('/users/john').once('value').then(function(snapshot) {
+				var username = snapshot.val().age;
+				console.log(username);
+			});
+			ref.push({
+					sankalp:{
+						number: 80,
+						age: 80
+				},
+				Amanda: {
+					number: 2,
+					age: 20
+					}
+				});
+			//console.log(ref);
+  			//var username = snapshot.val(6).username;
+			//console.log(firebase);
+			*/
+	  </script>
+   </head>
+	
+   <body>
+		<img id="myimg" src="#" alt="bucket_img" />
+		<input type='file' accept='image/*' onchange='openFile(event)'><br>
+		<input type="text" id="email" />
+		<input type="password" id="password" />
+		<button onclick = "googleSignin()">Google Signin</button>
+		<button onclick = "googleSignout()">Google Signout</button>
+		<button onclick = "emailAuth()">Create User</button>
+		<button onclick = "emailSignin()">Email Signin</button>
+		<button onclick = "facebookSignin()">Facebook Signin</button>
+		<button onclick = "facebookSignout()">Facebook Signout</button>
+   </body>
+	
+</html>

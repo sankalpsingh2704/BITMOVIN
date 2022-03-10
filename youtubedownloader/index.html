@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Youtube Downloader React</title>
+		<meta charset="utf-8">
+		<meta content='#eb1c26' name='theme-color'/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="manifest" href="./manifest.json">
+		<link rel="icon" href="./images/chrome-touch-icon-192x192.png" sizes="192x192" type="image/png">
+		<link rel="icon" href="./images/chrome-touch-icon-384x384.png" sizes="384x384" type="image/png">
+		<!--<link href='https://raw.githubusercontent.com/facebook/react/master/docs/favicon.ico' rel='icon' type='image/x-icon'/>-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="sweetalert.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="sweetalert-dev.js"></script>
+	</head>
+	<body>
+		<div class="loader">
+			<div>
+				Youtube Downloader React
+			</div>
+			<svg viewBox="0 0 32 32" width="32" height="32">
+				<circle class="spinner" cx="16" cy="16" r="14" fill="none"></circle>
+			</svg>
+		</div>
+		<div class="container main" id='root'></div>
+		<script src="./react.js"></script>
+		<script src="./react-dom.js"></script>
+		<script src="./browser.min.js"></script>
+		<script src="./script.js" type="text/babel"></script>
+		<script>
+			$("#root").removeClass("main");
+			$(".loader").addClass("hide-loader");
+		</script>
+	</body>
+	<script>
+		if ('serviceWorker' in navigator) {
+				console.log("Will the service worker register?");
+				navigator.serviceWorker.register('service-worker.js').then(function(reg){
+					console.log("Yes, it did.");
+				}).catch(function(err) {
+					console.log("No it didn't. This happened: ", err)
+				});
+			}
+	</script>
+	<script>
+		window.onload = function(){
+			console.log(window.clipboardData.getData('Text'));
+		}
+		alert(navigator.appName);
+	</script>
+</html>

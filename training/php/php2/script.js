@@ -1,0 +1,10 @@
+$(document).ready(function(){
+	$("#destroy_btn").click(function(){
+		$.get("logout.php",function(data,status){
+			location.assign("index.php");
+		});
+	});
+	$("#redirect_btn").click(function(){
+			location.assign("http://75.101.158.137:8080/sankalp/sankalp_php_assignments/php_assignment_3_sankalp_narayan/index.php");	
+	});
+});

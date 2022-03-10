@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Youtube Downloader</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script>
+			
+			$(function(){
+				$.get("youtube.php?id=I5UBikauIQM",function(data,status){
+					var video = document.getElementById("myvideo");
+					//video.src = data;
+					var jsonData = JSON.parse(data);
+					//console.log(jsonData);
+					//var seq = $("#seq"+id+" option:selected").text();
+					video.src = jsonData[0]["url"];
+					populate(jsonData);
+				
+				});
+				function populate(jsonData)
+				{
+					for(var i=0 ; i< jsonData.length; i++)
+					{
+						jQuery('<option/>',
+						{
+							value: i,
+							html: jsonData[i]["type"]
+						}).appendTo("#myselect");
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="jumbotron">
+				<h1>Youtube Downloader</h1>      
+				<p>Enter Youtube Url and Download</p>
+			</div>
+			<div class="row">
+				<label class="input-group" for="youtube_input">Enter Youtube Url:</label>
+			</div>
+			<div class="row">
+				<div class="input-group col-lg-8">
+					<input type="text" class="form-control" id="youtube_input" name="youtube_input" placeholder="Enter Youtube Url" />
+					<div class="input-group-btn">
+						<button class="btn btn-success" type="button">
+							<i class="glyphicon glyphicon-search"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="row select-box">
+				<label class="input-group" for="myselect">Select Format:</label>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 input-group">
+					<select id="myselect" name="myselect" class="form-control">
+					</select>
+					<div class="input-group-btn">
+						<button class="btn btn-success" type="button">Download</button>
+					</div>
+				</div>
+			</div>
+			<div class="row col-lg-7 form-group video-section">
+				<label>Video Preview:</label>
+				<div class="embed-responsive embed-responsive-16by9">
+					<video controls="controls" id="myvideo" poster="youtube-logo.jpg" name="myvideo" class="embed-responsive-item" type="video/mp4" src="#">
+					</video>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+
+<html><head>
+  <title>Create circular SVG charts with Circles : Lugo Labs</title>
+  <meta name="description" content="Circles, a lightweight JavaScript library that generates circular graphs in SVG.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+
+  <link rel="shortcut icon" type="image/x-icon" href="http://www.lugolabs.com/circles/assets/lugo_labs_fav-e9d2491417c991f6c99f276197aeb8cd842b68ac48986986e1bbbaf8746199d5.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500|Playfair+Display|Droid+Serif|Open+Sans:400,600" rel="stylesheet">
+
+  <link rel="stylesheet" media="all" href="http://www.lugolabs.com/circles/assets/application-6bdc3abd8d6dd9129477ef112da6b867fb25bba320f5cd00e8a183c8d2a11553.css">
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="JHInUVv24IvDxudRYg3K9df04lqXq0BqkpjlJIRSh3395SrmjqE0sgN2tNqKUf6TLAyz7NdWDBtCacWHa9wFkw==">
+
+  
+</head>
+<body class="lugo page-open_source circles">
+  <header class="app-header cf" id="app-header">
+  <h1 class="logo">
+    <a href="/">
+      <div class="logo-sym">
+        <span class="ls-lg-v"></span>
+        <span class="ls-lg-h"></span>
+        <span class="ls-sm-v"></span>
+        <span class="ls-sm-h"></span>
+      </div>
+      <span class="logo-text">
+        Lugo Labs
+      </span>
+    </a>
+  </h1>
+
+
+  <ul class="links">
+    <li class=""><a href="/about">About</a></li>
+    <li class="active"><a href="/open-source">Open Source</a></li>
+    <li class=""><a href="/frontendrails">Front End Rails</a></li>
+    <li class=" contact"><a href="/contact">Contact</a></li>
+  </ul>
+</header>
+
+
+  <section class="app-bdy app-main">
+
+    
+
+      <div class="app-markdown blog cf">
+    <div class="app-markdown-cont" id="app-markdown">
+      <div class="app-markdown-inner">
+
+        <div class="pg-top-wrp">
+          <div class="content">
+            <div class="pg-title-wrp">
+              <h1 class="pg-title">Create circular SVG charts with Circles</h1>
+            </div>
+            <div class="demo">
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="app-markdown-bdy cf">
+          <div class="app-markdown-sidebar" id="app-markdown-sidebar"></div>
+          <div class="app-markdown-content">
+            <div class="top-wrp">
+  <div id="circles" class="circles">
+    <div class="circle" id="circles-1"><div class="circles-wrp" style="position: relative; display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><path fill="transparent" stroke="#D3B6C6" stroke-width="7" d="M 49.99052919602818 3.500000964474502 A 46.5 46.5 0 1 1 49.93541243287967 3.5000448554391212 Z"></path><path fill="transparent" stroke="#4B253A" stroke-width="7" d="M 49.99052919602818 3.500000964474502 A 46.5 46.5 0 0 1 77.38757800596537 87.57885803170663 "></path></svg><div class="circles-text" style="position: absolute; top: 0px; left: 0px; text-align: center; width: 100%; font-size: 35px; height: 100px; line-height: 100px;"><span class="circles-integer">40</span></div></div></div>
+    <div class="circle" id="circles-2"><div class="circles-wrp" style="position: relative; display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><path fill="transparent" stroke="#FCE6A4" stroke-width="7" d="M 49.99052919602818 3.500000964474502 A 46.5 46.5 0 1 1 49.93541243287967 3.5000448554391212 Z"></path><path fill="transparent" stroke="#EFB917" stroke-width="7" d="M 49.99052919602818 3.500000964474502 A 46.5 46.5 0 0 1 52.964517323965175 96.40540525667146 "></path></svg><div class="circles-text" style="position: absolute; top: 0px; left: 0px; text-align: center; width: 100%; font-size: 35px; height: 100px; line-height: 100px;"><span class="circles-integer">49</span></div></div></div>
+    <div class="circle" id="circles-3"><div class="circles-wrp" style="position: relative; display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><path fill="transparent" stroke="#BEE3F7" stroke-width="7" d="M 49.99052919602818 3.500000964474502 A 46.5 46.5 0 1 1 49.93541243287967 3.5000448554391212 Z"></path><path fill="transparent" stroke="#45AEEA" stroke-width="7" d="M 49.99052919602818 3.500000964474502 A 46.5 46.5 0 1 1 27.657609614748132 90.78072573990076 "></path></svg><div class="circles-text" style="position: absolute; top: 0px; left: 0px; text-align: center; width: 100%; font-size: 35px; height: 100px; line-height: 100px;"><span class="circles-integer">58</span></div></div></div>
+    <div class="circle" id="circles-4"><div class="circles-wrp" style="position: relative; display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><path fill="transparent" stroke="#F8F9B6" stroke-width="7" d="M 49.99052919602818 3.500000964474502 A 46.5 46.5 0 1 1 49.93541243287967 3.5000448554391212 Z"></path><path fill="transparent" stroke="#D2D558" stroke-width="7" d="M 49.99052919602818 3.500000964474502 A 46.5 46.5 0 1 1 9.272766114085492 72.43975088992784 "></path></svg><div class="circles-text" style="position: absolute; top: 0px; left: 0px; text-align: center; width: 100%; font-size: 35px; height: 100px; line-height: 100px;"><span class="circles-integer">67</span></div></div></div>
+    <div class="circle" id="circles-5"><div class="circles-wrp" style="position: relative; display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><path fill="transparent" stroke="#F4BCBF" stroke-width="7" d="M 49.99052919602818 3.500000964474502 A 46.5 46.5 0 1 1 49.93541243287967 3.5000448554391212 Z"></path><path fill="transparent" stroke="#D43A43" stroke-width="7" d="M 49.99052919602818 3.500000964474502 A 46.5 46.5 0 1 1 3.58764499936251 47.14635263306759 "></path></svg><div class="circles-text" style="position: absolute; top: 0px; left: 0px; text-align: center; width: 100%; font-size: 35px; height: 100px; line-height: 100px;"><span class="circles-integer">76</span></div></div></div>
+  </div>
+
+  <div class="github">
+    <a href="https://github.com/lugolabs/circles" target="_blank">Fork me on Github</a>
+  </div>
+</div>
+
+<p>The circular graphs with the numerical value in the center have been a great way to visualizing data lately. For example, they are used to great effect by <a href="http://awwwards.com">awwwards</a>.</p>
+
+<p><strong><a href="https://github.com/lugolabs/circles">Circles</a></strong> makes creating the charts very easy. Circles is a lightweight JavaScript library without dependencies, that generates the SVG chart on the fly.</p>
+
+<p>Create a graph by calling:</p>
+<div class="highlight"><div class="lang">js</div><pre><code class="js"><span class="nx">Circles</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span>
+  <span class="nx">id</span><span class="o">:</span>           <span class="s1">'circles-1'</span><span class="p">,</span>
+  <span class="nx">radius</span><span class="o">:</span>       <span class="mi">60</span><span class="p">,</span>
+  <span class="nx">value</span><span class="o">:</span>        <span class="mi">43</span><span class="p">,</span>
+  <span class="nx">maxValue</span><span class="o">:</span>     <span class="mi">100</span><span class="p">,</span>
+  <span class="nx">width</span><span class="o">:</span>        <span class="mi">10</span><span class="p">,</span>
+  <span class="nx">text</span><span class="o">:</span>         <span class="kd">function</span><span class="p">(</span><span class="nx">value</span><span class="p">){</span><span class="k">return</span> <span class="nx">value</span> <span class="o">+</span> <span class="s1">'%'</span><span class="p">;},</span>
+  <span class="nx">colors</span><span class="o">:</span>       <span class="p">[</span><span class="s1">'#D3B6C6'</span><span class="p">,</span> <span class="s1">'#4B253A'</span><span class="p">],</span>
+  <span class="nx">duration</span><span class="o">:</span>     <span class="mi">400</span><span class="p">,</span>
+  <span class="nx">wrpClass</span><span class="o">:</span>     <span class="s1">'circles-wrp'</span><span class="p">,</span>
+  <span class="nx">textClass</span><span class="o">:</span>    <span class="s1">'circles-text'</span>
+  <span class="nx">styleWrapper</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nx">styleText</span><span class="o">:</span>    <span class="kc">true</span>
+<span class="p">})</span>
+</code></pre></div>
+
+<p>where</p>
+
+<ul>
+<li><code>id</code>            - the DOM element that will hold the graph</li>
+<li><code>radius</code>        - the radius of the circles</li>
+<li><code>value</code>         - init value of the circle (optional, defaults to 0)</li>
+<li><code>maxValue</code>      - maximum value of the circle (optional, defaults to 100)</li>
+<li><code>width</code>         - the width of the ring (optional, has value 10, if not specified)</li>
+<li><code>colors</code>        - an array of colors, with the first item coloring the full circle (optional, it will be <code>['#EEE', '#F00']</code> if not specified)</li>
+<li><code>duration</code>      - value in ms of animation's duration; defaults to 500; if 0 or <code>null</code> is passed, the animation will not run.</li>
+<li><code>wrpClass</code>      - class name to apply on the generated element wrapping the whole circle.</li>
+<li><code>textClass</code>      - class name to apply on the generated element wrapping the text content.</li>
+<li><code>styleWrapper</code>  - whether or not to add inline styles to the wrapper element (defaults to true)</li>
+<li><code>styleText</code>     - whether or not to add inline styles to the text (defaults to true)</li>
+<li><code>text</code>          - the text to display at the center of the graph (optional, the current "htmlified" value will be shown); if <code>null</code> or an empty string, no text will be displayed; it can also be a function: the returned value will be the displayed text:</li>
+</ul>
+<div class="highlight"><div class="lang">js</div><pre><code class="js"><span class="c1">// Example 1</span>
+<span class="kd">function</span><span class="p">(</span><span class="nx">currentValue</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="s1">'$'</span><span class="o">+</span><span class="nx">currentValue</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">// Example 2</span>
+<span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">getPercent</span><span class="p">()</span> <span class="o">+</span> <span class="s1">'%'</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<h2>API</h2>
+<div class="highlight"><div class="lang">js</div><pre><code class="js"><span class="nx">myCircle</span><span class="p">.</span><span class="nx">updateRadius</span><span class="p">(</span><span class="nb">Number</span> <span class="nx">radius</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Regenerates the circle with the given <code>radius</code> (see <code>spec/responsive.html</code> for an example on how to create a responsive circle).</p>
+<div class="highlight"><div class="lang">js</div><pre><code class="js"><span class="nx">myCircle</span><span class="p">.</span><span class="nx">updateWidth</span><span class="p">(</span><span class="nb">Number</span> <span class="nx">width</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Regenerates the circle with the given <code>width</code></p>
+<div class="highlight"><div class="lang">js</div><pre><code class="js"><span class="nx">myCircle</span><span class="p">.</span><span class="nx">updateColors</span><span class="p">(</span><span class="nb">Array</span> <span class="nx">colors</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Change <code>colors</code> used to draw the circle.</p>
+<div class="highlight"><div class="lang">js</div><pre><code class="js"><span class="nx">myCircle</span><span class="p">.</span><span class="nx">update</span><span class="p">(</span><span class="nb">Number</span> <span class="nx">value</span> <span class="p">[,</span> <span class="nb">Number</span> <span class="nx">duration</span><span class="p">])</span>
+</code></pre></div>
+
+<p>Set the value of the circle to <code>value</code>.
+Animation will take <code>duration</code> ms to execute. If no <code>duration</code> is given, default duration set in constructor will be used.
+If you don't want animation, set <code>duration</code> to 0.</p>
+<div class="highlight"><div class="lang">js</div><pre><code class="js"><span class="nx">myCircle</span><span class="p">.</span><span class="nx">update</span><span class="p">(</span><span class="nb">Boolean</span> <span class="nx">force</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Force the redrawing of the circle if <code>force</code> is set to <strong>true</strong>. Do nothing otherwise.</p>
+<div class="highlight"><div class="lang">js</div><pre><code class="js"><span class="nx">myCircle</span><span class="p">.</span><span class="nx">getPercent</span><span class="p">()</span>
+</code></pre></div>
+
+<p>Returns the percentage value of the circle, based on its current value and its max value.</p>
+<div class="highlight"><div class="lang">js</div><pre><code class="js"><span class="nx">myCircle</span><span class="p">.</span><span class="nx">getValue</span><span class="p">()</span>
+</code></pre></div>
+
+<p>Returns the value of the circle.</p>
+<div class="highlight"><div class="lang">js</div><pre><code class="js"><span class="nx">myCircle</span><span class="p">.</span><span class="nx">getMaxValue</span><span class="p">()</span>
+</code></pre></div>
+
+<p>Returns the max value of the circle.</p>
+<div class="highlight"><div class="lang">js</div><pre><code class="js"><span class="nx">myCircle</span><span class="p">.</span><span class="nx">getValueFromPercent</span><span class="p">(</span><span class="nb">Number</span> <span class="nx">percentage</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Returns the corresponding value of the circle based on its max value and given <code>percentage</code>.</p>
+<div class="highlight"><div class="lang">js</div><pre><code class="js"><span class="nx">myCircle</span><span class="p">.</span><span class="nx">htmlifyNumber</span><span class="p">(</span><span class="nb">Number</span> <span class="nx">number</span><span class="p">[,</span> <span class="nx">integerPartClass</span><span class="p">,</span> <span class="nx">decimalPartClass</span><span class="p">])</span>
+</code></pre></div>
+
+<p>Returned HTML representation of given <code>number</code> with given classes names applied on tags.
+Default value of <code>integerPartClass</code> is <strong>circles-integer</strong>.
+Default value of <code>decimalPartClass</code> is <strong>circles-decimals</strong>.</p>
+
+<h3>Styles</h3>
+
+<p>The styles have been specified inline to avoid external dependencies. But they can be overriden via CSS easily, being simply HTML elements.</p>
+
+<p>To help with this, a few CSS classes have been exposed:</p>
+
+<ul>
+<li><code>circles-wrp</code>   - the element wrapping the whole circle</li>
+<li><code>circles-text</code>  - the element wrapping text content</li>
+</ul>
+
+<p>You can overwritte these classes by sending properties <code>wrpClass</code> and/or <code>textClass</code> to the constructor.</p>
+
+<h2>HTML</h2>
+
+<p>Circles produces the minimum HTML needed to show the graph.</p>
+<div class="highlight"><div class="lang">html</div><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"circles-wrp"</span> <span class="na">style=</span><span class="s">"position: relative; display: inline-block;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;svg</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/2000/svg"</span> <span class="na">width=</span><span class="s">"80"</span> <span class="na">height=</span><span class="s">"80"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;path</span> <span class="na">fill=</span><span class="s">"transparent"</span> <span class="na">stroke=</span><span class="s">"#D3B6C6"</span> <span class="na">stroke-width=</span><span class="s">"7"</span> <span class="na">d=</span><span class="s">"M 39.992565928065126 3.500000757060633 A 36.5 36.5 0 1 1 39.949302232260386 3.500035209108127 Z"</span><span class="nt">&gt;&lt;/path&gt;</span>
+    <span class="nt">&lt;path</span> <span class="na">fill=</span><span class="s">"transparent"</span> <span class="na">stroke=</span><span class="s">"#4B253A"</span> <span class="na">stroke-width=</span><span class="s">"7"</span> <span class="na">d=</span><span class="s">"M 39.992565928065126 3.500000757060633 A 36.5 36.5 0 0 1 59.07174573163989 71.12103010421852 "</span><span class="nt">&gt;&lt;/path&gt;</span>
+  <span class="nt">&lt;/svg&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"circles-text"</span> <span class="na">style=</span><span class="s">"position: absolute; top: 0px; left: 0px; text-align: center; width: 100%; font-size: 28px; height: 80px; line-height: 80px;"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"circles-integer"</span><span class="nt">&gt;</span>41<span class="nt">&lt;/span&gt;</span>.
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"circles-decimals"</span><span class="nt">&gt;</span>26<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+
+<p>The SVG consists of two paths, one of wich is the full circle, with usually a paler color. The other path generates the smaller, strngly colored ring.</p>
+
+<p>The text is contained inside a DIV element with the decimal value split inside a SPAN for better style control.</p>
+
+<p>The whole content is then wrapped inside a self-contained DIV.</p>
+
+<h2>Styles</h2>
+
+<p>The styles have been specified inline to avoid external dependencies. But they can be overriden via CSS easily, being simply HTML elements.</p>
+
+<p>To help with this, a few CSS classes have been exposed:</p>
+
+<ul>
+<li><code>circles-wrp</code>       - the element wrapping the whole circle</li>
+<li><code>circles-text</code>      - the element wrapping text content</li>
+<li><code>circles-integer</code>   - the element wrapping the text before the dot</li>
+<li><code>circles-decimals</code>  - the element wrapping the decimal places</li>
+</ul>
+
+<p>You can overwritte these classes by sending properties <code>wrpClass</code> and/or <code>textClass</code> to the constructor.</p>
+
+<h2>Compatibility</h2>
+
+<p>Browsers that support SVG.</p>
+
+<p><strong>Desktop</strong>
+Firefox 3+, Chrome 4+, Safari 3.2+, Opera 9+, IE9 +</p>
+
+<p><strong>Mobile</strong>
+iOS Safari 3.2+, Android Browser 3+, Opera Mobile 10+, Chrome for Android 18+, Firefox for Android 15+</p>
+
+<h2>Inspirations</h2>
+
+<p>Code and ideas have been borrowed from <a href="http://highcharts.com">Highcharts</a> and Wout Fierens's <a href="http://svgjs.com">svg.js</a>.</p>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="app-side" id="app-side-panel">
+      <div class="app-markdown-inner">
+        <a class="promo" href="http://www.zeemr.com?_utm_source=http://www.lugolabs.com/circles">
+  <img src="/media/zeemr_promo_lugoland.png" alt="Zeemr promo lugoland">
+</a>
+      </div>
+    </div>
+
+  </div></section>
+
+  <footer class="app-footer">
+  <div class="content">
+
+    
+
+
+      <div class="top">
+        <span>Have a project to develop?</span>
+        <a href="/contact">Signup</a>
+      </div>
+
+      <div class="inner">
+        <a class="logo" href="/">
+          <img alt="Lugo Labs" src="/assets/logo_gray-8086e664b290509905b36aa0dbff27fcea2ed72345519fecf1193e698a244854.png">
+</a>
+        <nav class="nav">
+          <ul class="links cf">
+            <li class="sub-links">
+              <h4>Open source</h4>
+              <ul>
+                <li><a href="/iconly">Iconly</a></li>
+                <li><a href="/icofont">Icofont</a></li>
+                <li><a href="/tabular">Tabular</a></li>
+                <li><a href="/skins">Rails skins</a></li>
+                <li><a href="https://github.com/rtsinani/gambas">Gambas</a></li>
+                <li><a href="https://github.com/rtsinani/blue_csv">Blue csv</a></li>
+                <li><a href="/circles">Circles</a></li>
+                <li><a href="/loda-button">Loda button</a></li>
+                <li><a href="/loda-button-ui">Loda button UI</a></li>
+                <li><a href="/charicons">Charicons</a></li>
+                <li><a href="/datepicker">jQuery datepicker skins</a></li>
+                <li><a href="https://github.com/rtsinani/colonne">Colonne</a></li>
+                <li><a href="https://github.com/rtsinani/jQuery-ui-pic">jQuery UI pic</a></li>
+                <li><a href="/pin-clusterer">Pin Clusterer</a></li>
+              </ul>
+            </li>
+            <li class="sub-links">
+              <h4>Learn</h4>
+              <ul>
+                <li><a href="/books">Books</a></li>
+                <li><a href="/frontendrails">Front End Rails</a></li>
+                <li><div class="share-links cf"><span class="text-xs">Share</span><a class="iconic-twitter" target="_blank" href="https://twitter.com/intent/tweet?text=http%3A%2F%2Fwww.lugolabs.com%2Fopen-source"></a><a class="iconic-facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.lugolabs.com%2Fopen-source"></a><a class="iconic-googleplus" target="_blank" href="https://plus.google.com/share?url=http%3A%2F%2Fwww.lugolabs.com%2Fopen-source"></a></div></li>
+              </ul>
+            </li>
+            <li class="sub-links">
+              <h4>Tools</h4>
+              <ul>
+                <li><a href="/caret">caret</a></li>
+                <li><a href="/flat-slider">flat slider</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="copy">
+          <span class="logo-sym">
+            <img alt="Lugo Labs" src="/media/lugo_labs_logo_sym_gray.png">
+          </span>
+          © 2006-2017 Lugo Labs - <a href="/contacts/new">Contact</a>
+        </div>
+      </div>
+
+
+  </div>
+</footer>
+
+
+  <script async="" src="//www.google-analytics.com/analytics.js"></script><script src="http://www.lugolabs.com/circles/assets/application-6eb193bc981d7ae9cf74c50a3b127d9a466f838b1cdd592acdd59064b74ab873.js"></script>
+  
+  <script>
+    $(function() {
+      var colors = [
+        ['#D3B6C6', '#4B253A'], ['#FCE6A4', '#EFB917'], ['#BEE3F7', '#45AEEA'], ['#F8F9B6', '#D2D558'], ['#F4BCBF', '#D43A43']
+      ];
+
+      for (var i = 1; i <= 5; i++) {
+        var child = document.getElementById('circles-' + i),
+          percentage = 31 + (i * 9);
+
+        Circles.create({
+          id:         child.id,
+          percentage: percentage,
+          radius:     50,
+          width:      7,
+          value:     percentage,
+          colors:     colors[i - 1]
+        });
+      }
+    });
+  </script>
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-38583536-8', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+
+
+
+</body></html>

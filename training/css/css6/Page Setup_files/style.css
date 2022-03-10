@@ -1,0 +1,218 @@
+.container{
+	width: 444px;
+	height: 169px;
+	border: 2px solid blue;
+	border-top: none;
+	font-size: 11px;
+	font-family: Arial, MS Sans Serif;
+	background: #ECE9D8;
+}
+/* Area */
+.screen-size
+{
+	width: 176px;
+	position: relative;
+	bottom: 20px;
+	font-size: 11px;
+	height: 94px;
+}
+.sized>div:nth-child(2)> span> select{
+	font-size: 11px;
+}
+.wide_a{
+	height:24px;
+	width:32px;
+}
+.wide_a,.scroller-slides,.portrait-area-notes{
+	top: 5px;
+}
+.wide_a ,.sized,.slides-radio,.slides,.orientation,.slides-radio{
+	float:left;
+}
+.wide_a ,.rectangle,.helparea,.close_btn,.title ,.dropper,.scroller,.scroller-slides,.portrait-area,.portrait-area-notes,.landscape-area,.landscape-area-notes,.orientation,.input-control{
+	position: relative; 
+}
+.bar{ 
+	height: 30px;
+	width: 448px;
+	color: white;
+	text-shadow: 1px 1px #000000;
+    font-family: Arial,MS Sans Serif;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background: linear-gradient(to top,  #0043CF 0%, #0043CF 1%,#0060F9 10%,#0051E5 50%,#0365F1 80%,#4787ED 90%, #3D95FF 100%); 
+}
+.bar{
+	font-size: 12px;
+}
+.rectangle,.helparea{
+	float: right;
+	border: 1px solid white;
+	height: 23px;
+	width: 23px;
+	bottom: 28px;
+	right: 5px;
+	background: #E77054;
+	text-shadow: none;
+	cursor: pointer;
+}
+.rectangle,.helparea,.btn{
+	border-radius: 3px;
+}
+.close_btn{
+	margin-left: 1px;
+	margin-top: -8px;	
+	font-size: 35px;
+}
+.close_btn,.help{
+	vertical-align: top;
+}
+.helparea{
+	right: 8px;
+	background: linear-gradient(to top, #0043CF 0%, #5D8AF7 10%,#5D8AF7 50%,#5D8AF7 90%, #0043CF 100%);
+}
+.help{
+	
+	margin-top: 0;	
+	font-size: 20px;
+}
+.help,.slides{
+	margin-left: 5px;
+}
+.title{
+    top: 8px;
+    left: 8px;
+}
+/*Area*/
+
+.fieldset_level2{
+	margin-top: 6px;
+	height: 46px;
+}
+.fieldset_level2,.notes{
+	margin-right: 0;
+}
+.dropper{
+	bottom: 19px;
+	left: 158px;
+}
+.scroller{
+	bottom: 113px;
+    left: 159px;
+}
+.scroller-slides{
+	right: 21px;
+}
+.select_box{
+	width:176px;
+	height: 21px;
+}
+.input-control{
+	bottom: 112px;
+	
+}
+.input-control > div
+{
+	margin-top: 1px;
+}
+.sized{
+	width: 180px;
+	margin-left: 6px;
+}
+.slides{
+	width: 141px;
+	height: 139px;
+	margin-top: 8px;
+}
+.slides,.notes,.fieldset_level2
+{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+}
+.legend{
+	font-size: 10px;
+	font-family: Sans Serif;
+	color: #0046D5;
+}
+.btn{
+	background: linear-gradient(to top,  #E2DFD6 0%, #FFFFFF 100%);
+	border: 1px solid black;
+	width: 73px;
+}
+.cancel_btn,.sized{
+	margin-top: 11px;
+}
+.orientation{
+	margin-left: 7px;
+	bottom: 16px;
+}
+.slides-radio{	
+	line-height: 0px;
+	height: 20px;
+	width: 40px;
+}
+.notes{
+    height: 47px;
+	margin-top: 4px;
+}  
+.notes,.fieldset_level2{
+	margin-left: 0;
+}
+.checkbox-custom  + .checkbox-custom-label:before, .radio-custom + .radio-custom-label:before {
+	content:'';
+	background:-webkit-linear-gradient(left top,#E5E5E2, #fff);
+	background:-moz-linear-gradient(bottom right,#E5E5E2, #fff);
+	background:linear-gradient(to bottom right,#E5E5E2, #fff);
+	border:1px solid #1C5180;
+	display:inline-block;
+	vertical-align:text-bottom;
+	width:11px;
+	height:11px;
+}
+.checkbox-custom  + .checkbox-custom-label:before
+{
+	background:-webkit-linear-gradient(left top,#FFFFFF, #fff);
+	background:-moz-linear-gradient(bottom right,#FFFFFF, #fff);
+	background:linear-gradient(to bottom right,#FFFFFF, #fff);
+	border:1px solid #c0c8d0;
+}
+.radio-spacing{
+	width:200px;
+}
+.radio-spacing,.fieldset_result p,.fieldset_result{
+	margin-left: 9px;
+}
+.portrait-area{
+	top: 4px;
+}
+.portrait-area-notes,.landscape-area-notes{
+	left: 4px;
+}
+.landscape-area{
+	top: 10px;
+}
+.landscape-area-notes{
+	top: 11px;
+}
+.checkbox-custom:checked  + .checkbox-custom-label:before {
+	content:"\2714";
+	color:#38B935;
+	text-align:center;
+	font-size:9px;
+}
+.radio-custom + .radio-custom-label:before {
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	border-radius:50%;
+}
+.radio-custom:checked + .radio-custom-label:before {
+	background:#38B935;
+	-webkit-box-shadow:inset 0px 0px 0px 3px #F1F1EF;
+	-moz-box-shadow:inset 0px 0px 0px 3px #F1F1EF;
+	box-shadow:inset 0px 0px 0px 3px #F1F1EF;
+}
+.visibility{
+	display: none;
+}

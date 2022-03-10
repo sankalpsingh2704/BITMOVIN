@@ -1,0 +1,67 @@
+.container{
+	height: 638px;
+	width: 1110px;
+	background: url("water.jpg") no-repeat;
+}
+.bubble {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	
+	-webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	-moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+}
+.active{		
+	transition: 0.1s ease-in;
+}
+.area{
+ 	width: 600px;
+ 	height: 420px;
+	cursor: url("mgun.cur"),auto;
+}
+.active,.bubble{
+	position: fixed;
+}
+.change_controls,.button_controls
+{
+	width: 100%;
+}
+.score,.messg ,.miss,.change_controls,.area,.button_controls{	
+	float: left;
+}
+.score,.messg ,.miss,.area{
+	margin-top: 20px;
+}
+.button_controls,.change_controls{
+	width: 602px;
+}
+.button_controls,.change_controls,.area{
+	position: relative;
+	left: 200px;
+}
+.button_controls,.change_controls
+{
+	background: rgba(13,108,129,0.7);
+	height: 60px;
+}
+.messg{	
+	width: 280px;
+}
+.miss{		
+	margin-left: 10px;
+}
+.miss,.score{
+	width: 150px;
+}
+.btn ,.button_controls,.change_controls{
+	color: white;
+}
+.btn{
+	background: transparent;
+	border: none;
+	font-size: 25px;
+}
+.reset_btn{
+	float: right;
+}

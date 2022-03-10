@@ -1,0 +1,44 @@
+.container{
+	height: 638px;
+	width: 1110px;
+	background: repeating-linear-gradient(
+		45deg,
+		#7B9BCB,
+		#7B9BCB 2px,
+		#FFFFFF 2px,
+		#FFFFFF 4px
+	);
+
+}
+.area{
+	height: 400px;
+}
+.animated_btn ,.circle_btn,.rectangle_btn,.square_btn,.history_btn{
+	border: 9px solid #5183C0;
+	font-weight: 900;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	border-radius: 6px;
+	width: 107px;
+	height: 50px;
+}
+.animated_btn{
+	margin-top: 284px;
+	height: auto;
+}
+.circle_btn,.rectangle_btn,.square_btn,.history_btn
+{	
+	margin-right: 20px;
+}
+.circle,.rectangle,.square,.history{	
+	width: 170px;
+	margin-left: 20px;
+}
+.circle_btn,.rectangle_btn,.square_btn,.history_btn,.change_controls,.circle_btn,.draw,.circle,.rectangle,.square,.history{
+	float: left;
+}
+.change_controls
+{
+	width: 100%;
+	height: 60px;
+}
